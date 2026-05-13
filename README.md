@@ -168,31 +168,3 @@ study: review javascript closures
 feat: add nextjs server actions example
 ```
 
----
-
-# Objetivo do repositório
-
-Esse repo existe para:
-- consolidar conhecimento
-- revisar fundamentos
-- acompanhar evolução
-- criar projetos práticos
-- desenvolver consistência
-
-Não existe objetivo de:
-- criar documentação perfeita
-- organizar tudo de forma extrema
-- transformar estudo em burocracia
-
-O foco é prática constante.
-
----
-
-# Filosofia
-
-```txt
-Pouca estrutura.
-Muito código.
-Muitos commits.
-Muitos mini projetos.
-```
