@@ -105,29 +105,6 @@ Exemplos:
 
 ---
 
-# Como estudo
-
-O foco do repositório é:
-
-- aprender fundamentos
-- revisar conceitos
-- aplicar rapidamente
-- evitar excesso de teoria
-
-Regra principal:
-
-```txt
-Aprendeu → aplicou
-```
-
-Exemplo:
-- estudou Prisma relations → cria modelagem real
-- estudou JWT → cria auth simples
-- estudou Zod → valida formulário
-- estudou Docker → sobe API containerizada
-
----
-
 # Fluxo de estudo
 
 ## 1. Escolher um tópico
