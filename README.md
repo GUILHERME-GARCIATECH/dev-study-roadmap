@@ -2,8 +2,6 @@
 
 Repositório focado em estudos práticos de desenvolvimento fullstack.
 
-O objetivo não é criar documentação gigante ou um “curso pessoal”, e sim manter um fluxo simples de:
-
 ```txt
 estudar → praticar → aplicar → commitar → evoluir
 ```
