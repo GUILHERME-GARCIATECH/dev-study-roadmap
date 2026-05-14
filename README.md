@@ -5,7 +5,7 @@ Repositório focado em estudos práticos de desenvolvimento fullstack.
 ```txt
 estudar → praticar → aplicar → commitar → evoluir
 ```
-
+### 📅 [Clique aqui para ver o Planner do Repositório](planner.md)
 ---
 
 # Stack principal
