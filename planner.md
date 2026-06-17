@@ -28,7 +28,7 @@ planner.md → issue → estudo → prática → commit → conclusão
 
 ## JavaScript
 
-- [ ] Revisar sintaxe moderna do JavaScript
+- [x] Revisar sintaxe moderna do JavaScript
 - [x] Revisar tipos primitivos e coerção
 - [ ] Revisar truthy/falsy
 - [ ] Revisar funções tradicionais e arrow functions
