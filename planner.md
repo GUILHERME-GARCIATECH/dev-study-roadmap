@@ -30,11 +30,11 @@ planner.md → issue → estudo → prática → commit → conclusão
 
 - [x] Revisar sintaxe moderna do JavaScript
 - [x] Revisar tipos primitivos e coerção
-- [ ] Revisar truthy/falsy
-- [ ] Revisar funções tradicionais e arrow functions
+- [x] Revisar truthy/falsy
+- [x] Revisar hoisting
+- [x] Revisar funções tradicionais e arrow functions
 - [ ] Estudar parâmetros default e rest
 - [ ] Estudar escopo, closure e lexical scope
-- [ ] Revisar hoisting
 - [ ] Estudar arrays e métodos principais
 - [ ] Estudar objetos e manipulação de propriedades
 - [ ] Estudar destructuring
