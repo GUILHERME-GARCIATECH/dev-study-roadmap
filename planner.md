@@ -35,7 +35,7 @@ planner.md → issue → estudo → prática → commit → conclusão
 - [x] Revisar funções tradicionais e arrow functions
 - [x] Estudar parâmetros default e rest
 - [x] Estudar escopo, closure e lexical scope
-- [ ] Estudar arrays e métodos principais
+- [x] Estudar arrays e métodos principais
 - [ ] Estudar objetos e manipulação de propriedades
 - [ ] Estudar destructuring
 - [ ] Estudar spread/rest
