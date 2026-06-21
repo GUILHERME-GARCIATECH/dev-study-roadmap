@@ -5,6 +5,7 @@ Os métodos de array no JavaScript são classificados pelo seu comportamento: al
 ---
 
 ## 1. Métodos que Listam, Buscam e Iteram (Não Modificam)
+
 Estes métodos servem para ler o array, encontrar elementos ou executar funções para cada item, sem alterar a estrutura original.
 
 * **`forEach()`**: Executa uma função de callback para cada elemento do array.
@@ -12,31 +13,15 @@ Estes métodos servem para ler o array, encontrar elementos ou executar funçõe
 * **`findIndex()`**: Retorna o **índice** do primeiro elemento que satisfaz a condição. Retorna `-1` se não encontrar.
 * **`includes()`**: Verifica se um elemento específico existe no array. Retorna `true` ou `false`.
 * **`indexOf()`**: Retorna o primeiro índice onde o elemento especificado pode ser encontrado.
+* **`at()`**: Retorna o elemento de um índice específico. Aceita índices negativos (`-1` retorna o último elemento).
 * **`some()`**: Verifica se **pelo menos um** elemento passa no teste da função. Retorna `true` ou `false`.
 * **`every()`**: Verifica se **todos** os elementos passam no teste da função. Retorna `true` ou `false`.
 * **`reduce()`**: Executa uma função para cada elemento e acumula os valores em um **único resultado final** (como uma soma).
 
-### Exemplos de Listagem e Busca:
-```javascript
-const usuarios = [
-  { id: 1, nome: 'Ana', ativo: true },
-  { id: 2, nome: 'Beto', ativo: false },
-  { id: 3, nome: 'Carlos', ativo: true }
-];
-
-// Encontrar um elemento específico
-const usuarioAtivo = usuarios.find(u => u.ativo === true); // { id: 1, nome: 'Ana', ativo: true }
-
-// Verificar se todos estão ativos
-const todosAtivos = usuarios.every(u => u.ativo); // false
-
-// Somar IDs (Apenas para exemplo de reduce)
-const somaIds = usuarios.reduce((acumulador, u) => acumulador + u.id, 0); // 6
-```
-
 ---
 
 ## 2. Métodos que Modificam o Array Original (Mutáveis)
+
 Estes métodos alteram diretamente os dados, o tamanho ou a ordem do array no qual foram chamados.
 
 * **`push()`**: Adiciona um ou mais elementos ao **final** do array.
@@ -48,23 +33,10 @@ Estes métodos alteram diretamente os dados, o tamanho ou a ordem do array no qu
 * **`reverse()`**: Inverte a ordem dos elementos do array.
 * **`fill()`**: Preenche todos os valores do array de um índice inicial a um final com um valor estático.
 
-### Exemplos de Modificação:
-```javascript
-const frutas = ['Maçã', 'Banana'];
-
-frutas.push('Laranja'); // ['Maçã', 'Banana', 'Laranja']
-frutas.shift();        // ['Banana', 'Laranja']
-
-const numeros =;
-numeros.sort((a, b) => a - b); // [1, 2, 5, 8] (Ordenação numérica correta)
-
-// Uso do splice: remove 1 elemento na posição 1 e adiciona 'Uva'
-frutas.splice(1, 1, 'Uva'); 
-```
-
 ---
 
 ## 3. Métodos que Criam Novos Arrays (Imutáveis)
+
 Estes métodos não alteram o array original. Eles processam os dados e **retornam um novo array** independente.
 
 * **`map()`**: Cria um novo array com o resultado da função aplicada a cada elemento do array original.
@@ -74,18 +46,30 @@ Estes métodos não alteram o array original. Eles processam os dados e **retorn
 * **`flat()`**: Cria um novo array com todos os elementos de sub-arrays concatenados de forma recursiva até a profundidade especificada.
 * **`Array.from()`**: Cria uma nova instância de Array a partir de um objeto iterável ou semelhante a um array (como um NodeList do DOM).
 
-### Exemplos de Criação:
+---
+
+## 4. Métodos Modernos (Imutáveis)
+
+São versões modernas de métodos antigos. Eles **não modificam** o array original.
+
+* **`toSorted()`**: Ordena os elementos e retorna um novo array.
+* **`toReversed()`**: Inverte a ordem dos elementos e retorna um novo array.
+* **`toSpliced()`**: Versão imutável do `splice()`. Remove, substitui ou adiciona elementos retornando um novo array.
+* **`with()`**: Retorna um novo array alterando apenas o valor de um índice específico.
+
+---
+
+## 5. Conversão e Formatação
+
+Métodos úteis para transformar arrays em outros formatos.
+
+* **`join()`**: Junta todos os elementos do array em uma única string.
+
 ```javascript
-const precos =;
+const nomes = ["Ana", "José", "Maria"];
 
-// map: Criando novo array com desconto de 10%
-const precosComDesconto = precos.map(p => p * 0.9); // [9, 18, 27, 36]
+console.log(nomes.join(", "));
 
-// filter: Criando novo array apenas com valores maiores que 15
-const caros = precos.filter(p => p > 15); // [20, 30, 40]
-
-// slice: Pegando os dois primeiros elementos
-const primeiros = precos.slice(0, 2); // [10, 20]
-
-console.log(precos); // [10, 20, 30, 40] (O array original continua intacto!)
+// Ana, José, Maria
 ```
+
