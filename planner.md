@@ -33,8 +33,8 @@ planner.md → issue → estudo → prática → commit → conclusão
 - [x] Revisar truthy/falsy
 - [x] Revisar hoisting
 - [x] Revisar funções tradicionais e arrow functions
-- [ ] Estudar parâmetros default e rest
-- [ ] Estudar escopo, closure e lexical scope
+- [x] Estudar parâmetros default e rest
+- [x] Estudar escopo, closure e lexical scope
 - [ ] Estudar arrays e métodos principais
 - [ ] Estudar objetos e manipulação de propriedades
 - [ ] Estudar destructuring
