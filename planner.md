@@ -42,7 +42,7 @@ planner.md → issue → estudo → prática → commit → conclusão
 - [ ] Estudar template literals
 - [ ] Estudar módulos ESModules
 - [ ] Estudar tratamento de erros com try/catch
-- [ ] Estudar event loop
+- [x] Estudar event loop
 - [ ] Estudar promises
 - [ ] Estudar async/await
 - [ ] Estudar fetch API
